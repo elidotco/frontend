@@ -46,6 +46,22 @@ body {
     rgba(252, 101, 0, 0.397) 100%
   );
 }
+.background3 {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    30deg,
+    rgb(252, 101, 0) -100%,
+    rgba(21, 21, 21, 0) 100%
+  );
+}
+.background4 {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    280deg,
+    rgb(252, 101, 0) -100%,
+    rgba(21, 21, 21, 0) 100%
+  );
+}
 
 .heightdud {
   height: calc(100vh - 96px);

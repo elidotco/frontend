@@ -3,12 +3,12 @@ import Button from "../Button";
 
 const AboutSection = () => {
   return (
-    <section className="heightdud flex justify-between background2 px-5 md:px:10 lg:px-32 py-20">
+    <section className="py-20  flex justify-between background2 flex-col md:flex-row px-5 md:px:10 lg:px-32  lg:py-20">
       {/* Image */}
       <div className="w-1/2 h-full "></div>
       {/* Image */}
 
-      <div className="w-1/2 flex flex-col gap-y-4 pl-auto h-full ">
+      <div className=" w-full md:w-1/2 flex flex-col gap-y-4 pl-auto h-full ">
         <p className="uppercase text-orange">About Us</p>
         <h2 className="capitalize text-2xl">
           We bring <span className="text-orange">Creative</span> ideas to life
