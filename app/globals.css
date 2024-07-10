@@ -38,6 +38,14 @@ body {
     rgba(252, 101, 0, 0.397) 100%
   );
 }
+.background5 {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(252, 100, 0, 0) 40%,
+    rgba(252, 101, 0, 0.397) 100%
+  );
+}
 .background2 {
   background: rgb(0, 0, 0);
   background: linear-gradient(

@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import {
   AboutSection,
   HeroSection,
+  ProjectsSection,
   ServiceSection,
 } from "./components/sections";
 
@@ -11,6 +14,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ServiceSection />
+      <ProjectsSection />
     </main>
   );
 }

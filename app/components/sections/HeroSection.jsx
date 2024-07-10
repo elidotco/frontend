@@ -4,7 +4,7 @@ import Button from "../Button";
 const HeroSection = () => {
   return (
     <section
-      className="w-full py-24
+      className="w-full heightdud py-24
      md:px-10 px-5 lg:pl-48 lg:pr-0 -green   flex justify-center items-center   background1"
     >
       <div className="w-full h-full  flex justify-between">
