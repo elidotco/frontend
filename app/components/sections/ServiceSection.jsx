@@ -13,7 +13,6 @@ const AboutSection = () => {
         <ServiceCard value={3} />
       </div>
       {/* Image */}
-
       <div className=" w-full lg:w-1/2 flex flex-col gap-y-4 pl-auto h-full ">
         <p className="uppercase text-orange">Our Services</p>
         <h2 className="capitalize text-2xl font-bold">
