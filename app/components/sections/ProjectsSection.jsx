@@ -1,4 +1,14 @@
+import { Splide, SplideSlide } from "@splidejs/react-splide";
 import React from "react";
+// Default theme
+import "@splidejs/react-splide/css";
+
+// or other themes
+import "@splidejs/react-splide/css/skyblue";
+import "@splidejs/react-splide/css/sea-green";
+
+// or only core styles
+import "@splidejs/react-splide/css/core";
 
 const ProjectsSection = () => {
   return (
@@ -16,6 +26,51 @@ const ProjectsSection = () => {
           <div className="w-20 h-[2px] bg-[#fff]"></div>
         </div>
         {/* line */}
+      </div>
+
+      <div className="py-20">
+        <Splide
+          aria-label="My Favorite Images"
+          options={{
+            rewind: true,
+
+            type: "loop",
+            perPage: 4,
+            gap: 30,
+            pagination: false,
+            autoplay: true,
+            pauseOnHover: true,
+            breakpoints: {
+              500: {
+                perPage: 1,
+                gap: 0,
+              },
+              800: {
+                perPage: 3,
+              },
+            },
+            arrows: false,
+          }}
+        >
+          <SplideSlide>
+            <div className="w-full h-64 bg-orange"></div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="w-full h-64 bg-orange"></div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="w-full h-64 bg-orange"></div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="w-full h-64 bg-orange"></div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="w-full h-64 bg-orange"></div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="w-full h-64 bg-orange"></div>
+          </SplideSlide>
+        </Splide>
       </div>
     </section>
   );

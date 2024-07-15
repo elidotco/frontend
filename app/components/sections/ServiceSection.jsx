@@ -26,14 +26,16 @@ const AboutSection = () => {
           </h2>
           {/* line */}
           <div className="w-20 h-[2px] bg-[#fff]"></div>
-
           {/* line */}
 
           <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-            quam, iste temporibus nostrum eligendi enim voluptatibus inventore
-            saepe, adipisci maxime deserunt aspernatur reprehenderit illum? Quod
-            deserunt ea nisi voluptatum aspernatur.
+            we offer comprehensive services designed to elevate your brand and
+            connect with your audience. Our team of experts is dedicated to
+            bringing your vision to life with creativity, precision, and
+            innovation. From brand strategy to digital marketing, we provide
+            tailored solutions that drive results and set you apart in a crowded
+            mass explore our diverse services and discover how we can help you
+            achieve your goals:
           </div>
           <Button name={"read more"} path={"/services"} />
         </div>
