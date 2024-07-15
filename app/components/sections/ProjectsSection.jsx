@@ -1,15 +1,12 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import React from "react";
 // Default theme
-import "@splidejs/react-splide/css";
+// import "@splidejs/react-splide/css";
 
 // or other themes
-import "@splidejs/react-splide/css/skyblue";
-import "@splidejs/react-splide/css/sea-green";
 
 // or only core styles
 import "@splidejs/react-splide/css/core";
-
 const ProjectsSection = () => {
   return (
     <section className="w-full py-28">
@@ -37,7 +34,7 @@ const ProjectsSection = () => {
             type: "loop",
             perPage: 4,
             gap: 30,
-            pagination: false,
+            pagination: true,
             autoplay: true,
             pauseOnHover: true,
             breakpoints: {
