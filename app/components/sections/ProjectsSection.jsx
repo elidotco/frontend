@@ -25,7 +25,7 @@ const ProjectsSection = () => {
         {/* line */}
       </div>
 
-      <div className="py-20">
+      <div className="p-20">
         <Splide
           aria-label="My Favorite Images"
           options={{
@@ -37,6 +37,7 @@ const ProjectsSection = () => {
             pagination: true,
             autoplay: true,
             pauseOnHover: true,
+
             breakpoints: {
               500: {
                 perPage: 1,
