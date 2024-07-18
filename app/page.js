@@ -12,9 +12,9 @@ export default function Home() {
   return (
     <main className="">
       <HeroSection />
-      <AboutSection />
-      <ServiceSection />
-      <ProjectsSection />
+
+      {/* <ServiceSection />
+      <ProjectsSection /> */}
     </main>
   );
 }
