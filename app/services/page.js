@@ -6,13 +6,11 @@ import {
   HeroSection,
   ProjectsSection,
   ServiceSection,
-} from "./components/sections";
+} from "../components/sections";
 
 export default function Home() {
   return (
     <main className="">
-      <HeroSection />
-      <AboutSection />
       <ServiceSection />
       <ProjectsSection />
     </main>

@@ -55,7 +55,11 @@ export default function RootLayout({ children }) {
         <link rel="manifest" href="/site.webmanifest" />
         <title>{data}</title>
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navbar />
+
+        {children}
+      </body>
     </html>
   );
 }
