@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -9,8 +10,6 @@ import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 const Navbar = () => {
   const navigation = [
-    { name: "Home", href: "/home" },
-    { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Portfolio", href: "/portfolio" },
     { name: "Contact us", href: "/contact" },
@@ -31,9 +30,16 @@ const Navbar = () => {
     }
   };
   return (
-    <header
-      className={` w-full h-24 py-4 md:py-6 sticky top-0 bg-[#000] z-50  px-5 md:px-10 lg:px-44 flex items-center justify-between transition-all inset-x-0  duration-150 ${
-        scrolling ? "bg-black transition-all duration-200 shadow" : ""
+    <motion.header
+      initial={{ visibility: "hidden", translateY: -100 }}
+      animate={{ visibility: "visible", translateY: 0 }}
+      transition={{
+        type: "spring",
+        stiffness: 260,
+        damping: 20,
+      }}
+      className={`  w-full h-14 pt-4 fixed top-0 bg-[#000] z-50  px-5 md:px-10 lg:px-56  items-center justify-between transition-all inset-x-0  duration-150 ${
+        scrolling ? "bg-black transition-all duration-200 " : ""
       } `}
     >
       {/* Logo */}
@@ -136,7 +142,7 @@ const Navbar = () => {
       </Dialog>
 
       {/* Logo */}
-    </header>
+    </motion.header>
   );
 };
 
