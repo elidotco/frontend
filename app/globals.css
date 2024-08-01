@@ -12,7 +12,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #0a0a0a;
+  background: #000;
   font-family: "Poppins", sans-serif;
 }
 
@@ -48,14 +48,10 @@ body {
 }
 .background3 {
   background: rgb(0, 0, 0);
-  background: linear-gradient(
-    30deg,
-    rgb(252, 101, 0) -100%,
-    rgba(21, 21, 21, 0) 100%
-  );
+  background: linear-gradient(30deg, #fc6500 -100%, rgba(21, 21, 21, 0) 100%);
 }
 .background4 {
-  background: rgb(0, 0, 0);
+  background: #191919;
   background: linear-gradient(
     280deg,
     rgb(252, 101, 0) -100%,

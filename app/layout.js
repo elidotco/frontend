@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
         <title>{data}</title>
       </head>
       <body className={inter.className}>
-        <Navbar />
+        {/* <Navbar /> */}
 
         {children}
       </body>
