@@ -38,7 +38,7 @@ const Navbar = () => {
         stiffness: 300,
         damping: 10,
       }}
-      className={`  w-full h-14 pt-4 fixed top-0 bg-[#000] z-50  px-5 md:px-10 lg:px-56  items-center justify-between transition-all inset-x-0  duration-150 ${
+      className={`  w-full h-14 pt-4 fixed top-0 bg-[#000] z-50  px-5 md:px-10   items-center justify-between transition-all inset-x-0  duration-150 ${
         scrolling ? "bg-black transition-all duration-200 " : ""
       } `}
     >

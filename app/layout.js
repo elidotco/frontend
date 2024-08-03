@@ -4,9 +4,13 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "./components";
 import { usePathname } from "next/navigation";
+import Nav from "./components/Nav";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
+gsap.registerPlugin(useGSAP);
 export default function RootLayout({ children }) {
   const pathName = usePathname();
 
@@ -55,7 +59,11 @@ export default function RootLayout({ children }) {
         <link rel="manifest" href="/site.webmanifest" />
         <title>{data}</title>
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Nav />
+
+        {children}
+      </body>
     </html>
   );
 }
