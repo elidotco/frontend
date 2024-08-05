@@ -1,38 +1,30 @@
 import React from "react";
-import Button from "../Button";
+
 import Image from "next/image";
-import image from "@/public/about.png";
 
 const AboutSection = () => {
   return (
-    <section className="py-20  flex justify-between background2 flex-col md:flex-row px-5 md:px:10 lg:px-32  items-center lg:py-28">
-      {/* Image */}
-      <div className="w-1/2 h-full ">
-        <Image
-          src={image}
-          className="w-full h-auto aspect-auto"
-          alt="image of a creative bot"
-        />
-      </div>
-      {/* Image */}
+    <section className="py-20 border flex justify-between  flex-col  px-5 md:px:10 lg:px-[50px]  items-center lg:py-28">
+      <h2 className="font-semibold text-[3vw] text-center">
+        Applying a cross-disciplinary expertise in crafting and executing
+        tech-based solutions to optimize industrial operations.
+      </h2>
 
-      <div className=" w-full md:w-1/2 flex flex-col gap-y-4 pl-auto h-full ">
-        <p className="uppercase text-orange">About Us</p>
-        <h2 className="capitalize text-2xl">
-          We bring <span className="text-orange">Creative</span> ideas to life
-        </h2>
-        {/* line */}
-        <div className="w-20 h-[2px] bg-[#fff]"></div>
+      <h3 className="text-orange text-[2vw] text-center pt-20">
+        We bring Creative ideas to life
+      </h3>
 
-        {/* line */}
-        <p className="text-orange uppercase">We love creating</p>
-        <div>
+      <div className="flex w-full pt-32 flex-row justify-between items-center">
+        {/* IMAGES SCROLL ANIMATION */}
+        <div className="w-[40%] h-56 bg-gray-light bg-opacity-30 "></div>
+        {/* IMAGES SCROLL ANIMATION */}
+
+        <p className="w-[45%]">
           we are passionate about crafting unique and compelling stories that
           resonate with your audience. As a full-service creative media agency,
           we blend innovation, strategy, and creativity to deliver impactful
           results.
-        </div>
-        <Button name={"read more"} path={"/about"} />
+        </p>
       </div>
     </section>
   );

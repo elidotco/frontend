@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
+import Link from "next/link";
 
 const HeroSection = () => {
   const container = useRef();
@@ -34,6 +35,7 @@ const HeroSection = () => {
         yPercent: -100,
         paused: true,
         duration: 0.2,
+        ease: "expo",
       })
       .progress(1);
 
@@ -59,15 +61,18 @@ const HeroSection = () => {
         </h1>
       </div>
 
-      <div className="w-full xl:w-1/3 ml-auto  pt-10 text flex flex-col">
+      <div className="w-full md:w-[40%] lg:w-1/3 ml-auto  pt-10 text flex flex-col">
         We blend creativity with innovation to craft unforgettable stories and
         designs that captivate, inspire, and drive results. By merging artistic
         vision with strategic thinking, we deliver impactful solutions that not
         only capture attention but also evoke emotions and encourage meaningful
         engagement
-        <button className="transparent w-fit my-5 transition-all hover:text-[#000] hover:bg-[#fff] px-6 py-1 text-[#fff] border-2 border-[#fff] rounded-3xl hover:duration-150 duration-150">
+        <Link
+          href="/"
+          className="transparent w-fit my-5 transition-all hover:text-[#000] hover:bg-[#fff] px-6 py-1 text-[#fff] border-2 border-[#fff] rounded-3xl hover:duration-150 duration-150"
+        >
           GET IN TOUCH
-        </button>
+        </Link>
       </div>
 
       {/* <div className="w-full h-full flex ">
