@@ -7,10 +7,12 @@ import { usePathname } from "next/navigation";
 import Nav from "./components/Nav";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
 
 const inter = Inter({ subsets: ["latin"] });
 
 gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
 export default function RootLayout({ children }) {
   const pathName = usePathname();
 

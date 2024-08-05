@@ -3,6 +3,7 @@ import Button from "../Button";
 import { gsap } from "gsap";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
 
 const HeroSection = () => {
   const container = useRef();
@@ -25,12 +26,30 @@ const HeroSection = () => {
       .fromTo(
         ".text",
         { opacity: 0, translateY: 300 },
-        { opacity: 1, translateY: 0, duration: 1 }
+        { opacity: 1, translateY: 0, duration: 1, delay: 0.2 }
       );
+
+    const showAnim = gsap
+      .from("nav", {
+        yPercent: -100,
+        paused: true,
+        duration: 0.2,
+      })
+      .progress(1);
+
+    ScrollTrigger.create({
+      start: "top top",
+      end: "max",
+      markers: false,
+      onUpdate: (self) => {
+        self.direction === -1 ? showAnim.play() : showAnim.reverse();
+      },
+    });
   });
+
   return (
     <section
-      className="w-full h-screen overflow-y-hidden
+      className="w-full h-screen bg-fixed bg-[#000] overflow-y-hidden
      md:px-10 pt-28 md:pt-36 flex justify-between flex-col pb-10  px-5 xl:px-[50px"
     >
       <div className="text-left xl:w-4/5">
@@ -46,7 +65,7 @@ const HeroSection = () => {
         vision with strategic thinking, we deliver impactful solutions that not
         only capture attention but also evoke emotions and encourage meaningful
         engagement
-        <button className="transparent w-1/2 my-5 transition-all hover:text-[#000] hover:bg-[#fff] px-6 py-1 text-[#fff] border-2 border-[#fff] rounded-3xl">
+        <button className="transparent w-1/2 my-5 transition-all hover:text-[#000] hover:bg-[#fff] px-6 py-1 text-[#fff] border-2 border-[#fff] rounded-3xl hover:duration-150 duration-150">
           MENU
         </button>
       </div>
