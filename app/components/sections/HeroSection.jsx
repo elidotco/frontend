@@ -50,7 +50,7 @@ const HeroSection = () => {
   return (
     <section
       className="w-full h-screen bg-fixed bg-[#000] overflow-y-hidden
-     md:px-10 pt-28 md:pt-36 flex justify-between flex-col pb-10  px-5 xl:px-[50px"
+     md:px-10 pt-28 md:pt-36 flex lg:justify-between flex-col pb-10  px-5 xl:px-[50px"
     >
       <div className="text-left xl:w-4/5">
         <h1 className=" herotext text-orange  font capitalise text-[35px] lg:text-[76px] md:text-6xl ">
@@ -59,14 +59,14 @@ const HeroSection = () => {
         </h1>
       </div>
 
-      <div className="w-1/3 ml-auto  text flex flex-col">
+      <div className="w-full xl:w-1/3 ml-auto  pt-10 text flex flex-col">
         We blend creativity with innovation to craft unforgettable stories and
         designs that captivate, inspire, and drive results. By merging artistic
         vision with strategic thinking, we deliver impactful solutions that not
         only capture attention but also evoke emotions and encourage meaningful
         engagement
-        <button className="transparent w-1/2 my-5 transition-all hover:text-[#000] hover:bg-[#fff] px-6 py-1 text-[#fff] border-2 border-[#fff] rounded-3xl hover:duration-150 duration-150">
-          MENU
+        <button className="transparent w-fit my-5 transition-all hover:text-[#000] hover:bg-[#fff] px-6 py-1 text-[#fff] border-2 border-[#fff] rounded-3xl hover:duration-150 duration-150">
+          GET IN TOUCH
         </button>
       </div>
 
