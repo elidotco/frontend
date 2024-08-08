@@ -54,8 +54,8 @@ const HeroSection = () => {
       className="w-full h-screen bg-fixed bg-[#000] overflow-y-hidden
      md:px-10 pt-28 md:pt-36 flex lg:justify-between flex-col pb-10  px-5 xl:px-[50px"
     >
-      <div className="text-left xl:w-4/5">
-        <h1 className=" herotext text-orange  font capitalise text-[35px] lg:text-[76px] md:text-6xl ">
+      <div className="text-left ">
+        <h1 className=" herotext text-orange  font capitalise text-[35px] lg:text-[8vw] md:text-6xl ">
           We are a Creative Design
           <span className=" py-5 text-[#fff] "> Agency</span>
         </h1>

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const AboutSection = () => {
   return (
-    <section className="py-20 border flex justify-between  flex-col  px-5 md:px:10 lg:px-[50px]  items-center lg:py-28">
+    <section className="py-20  flex justify-between  flex-col  px-5 md:px:10 lg:px-[50px]  items-center lg:py-28">
       <h2 className="font-semibold text-[3vw] text-center">
         Applying a cross-disciplinary expertise in crafting and executing
         tech-based solutions to optimize industrial operations.
