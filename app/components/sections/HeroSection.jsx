@@ -47,7 +47,38 @@ const HeroSection = () => {
         self.direction === -1 ? showAnim.play() : showAnim.reverse();
       },
     });
-  });
+
+    var tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".about",
+        scrub: true,
+        pin: false,
+        start: "top bottom ",
+        end: "+=100%",
+      },
+    });
+
+    tl.from(
+      ".about-text1",
+
+      { opacity: 0, ease: "circ.inOut", duration: 1 }
+    );
+    var st = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".service",
+        scrub: true,
+        pin: false,
+        start: "top bottom ",
+        end: "+=100%",
+      },
+    });
+
+    st.from(
+      ".service-text",
+
+      { opacity: 0, ease: "circ.inOut", duration: 2 }
+    );
+  }, container);
 
   return (
     <section
@@ -55,7 +86,7 @@ const HeroSection = () => {
      md:px-10 pt-28 md:pt-36 flex lg:justify-between flex-col pb-10  px-5 xl:px-[50px"
     >
       <div className="text-left ">
-        <h1 className=" herotext text-orange  font capitalise text-[35px] lg:text-[8vw] md:text-6xl ">
+        <h1 className=" herotext text-orange pl-10 w-full  font capitalise text-[35px] lg:text-[8vw] md:text-6xl ">
           We are a Creative Design
           <span className=" py-5 text-[#fff] "> Agency</span>
         </h1>
