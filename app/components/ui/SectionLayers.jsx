@@ -6,32 +6,37 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 export default function Layers() {
-  const mainRef = useRef();
+  const sectionRef = useRef();
   const scrollTween = useRef(null);
   const snapTriggers = useRef([]);
 
   useEffect(() => {
     const panels = gsap.utils.toArray(".panel");
     const scrollStarts = [];
+    const firstPanel = panels[0];
 
     // Set up scroll triggers for each panel
     panels.forEach((panel, i) => {
       snapTriggers.current[i] = ScrollTrigger.create({
         trigger: panel,
         start: "top top",
-        onLeaveBack: (self) => self.disable(), // prevent leaving back
+        end: "bottom top",
       });
       scrollStarts.push(snapTriggers.current[i].start);
     });
 
-    // Refresh ScrollTrigger calculations
-    ScrollTrigger.addEventListener("refresh", () => {
-      ScrollTrigger.refresh();
-    });
-
-    // Handle scroll snapping
+    // Handle scroll snapping only within the section and when the user scrolls down
     const handleSnapScroll = (direction) => {
-      if (!scrollTween.current) {
+      const firstPanelAtTop = ScrollTrigger.isInViewport(firstPanel, "top top");
+      const sectionInViewport = ScrollTrigger.isInViewport(sectionRef.current);
+
+      // Snap only if scrolling down within the section and the first panel is at the top
+      if (
+        direction > 0 &&
+        firstPanelAtTop &&
+        sectionInViewport &&
+        !scrollTween.current
+      ) {
         let scrollPos = window.scrollY + direction * window.innerHeight;
         const closestPanelIndex = scrollStarts.reduce((closest, start, i) => {
           return Math.abs(scrollPos - start) <
@@ -40,12 +45,16 @@ export default function Layers() {
             : closest;
         }, 0);
         goToSection(closestPanelIndex);
+      } else {
+        // Allow normal scrolling when scrolling up or outside the section
+        scrollTween.current = null;
       }
     };
 
-    // Observe scroll and touch inputs
+    // Observe scroll and touch inputs within the section
     ScrollTrigger.observe({
-      type: "wheel,touch",
+      type: "wheel",
+      target: sectionRef.current,
       onChangeY(self) {
         handleSnapScroll(self.deltaY > 0 ? 1 : -1);
       },
@@ -67,28 +76,28 @@ export default function Layers() {
   };
 
   return (
-    <main ref={mainRef}>
-      <section className="description panel light">
-        <div>
-          <h1>Layered pinning</h1>
-          <p>Use pinning to layer panels on top of each other as you scroll.</p>
-          <div className="scroll-down">
-            Scroll down<div className="arrow"></div>
+    <div>
+      {/* Other content before the snapping section */}
+      <section className="some-other-section">Other Content Before</section>
+
+      {/* Snapping section */}
+      <section ref={sectionRef}>
+        <div className="description panel light">
+          <div>
+            <h1>Layered pinning</h1>
+            <p>
+              Use pinning to layer panels on top of each other as you scroll.
+            </p>
+            <div className="scroll-down">
+              Scroll down<div className="arrow"></div>
+            </div>
           </div>
         </div>
+        <div className="panel dark  w-full h-screen">ONE</div>
+        <div className="panel purple  w-full h-screen">TWO</div>
+        <div className="panel orange  w-full h-screen">THREE</div>
+        <div className="panel red  w-full h-screen">FOUR</div>
       </section>
-      <section className="panel bg-blue w-full h-screen text-center  ">
-        ONE
-      </section>
-      <section className="panel bg-orange w-full h-screen text-center ">
-        TWO
-      </section>
-      <section className="panel bg-green w-full h-screen text-center ">
-        THREE
-      </section>
-      <section className="panel bg-gray-light w-full h-screen text-center ">
-        FOUR
-      </section>
-    </main>
+    </div>
   );
 }

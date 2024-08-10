@@ -4,8 +4,8 @@ import Layers from "../ui/SectionLayers";
 const AboutSection = () => {
   return (
     <>
-      <section className="py-20 service flex justify-between  flex-col  px-5 md:px:10 lg:px-[50px]  items-center lg:py-28">
-        <h3 className="text-orange text-[3vw] text-center ">
+      <section className="py-20 service  flex justify-between  flex-col  px-5 md:px:10 lg:px-[50px]  items-center lg:py-28">
+        <h3 className="text-orange font-semibold  text-[2vw] text-center ">
           Experience The power of Innovation.
         </h3>
         <h4 className="text-[2vw] pt-20 text-center service-text">
@@ -17,11 +17,15 @@ const AboutSection = () => {
           mass explore our diverse services and discover how we can help you
           achieve your goals:
         </h4>
+        {/* SERVICES CARDS */}
+        <div className="flex w-full">
+          <div className=""></div>
+          <div className=""></div>
+          <div className=""></div>
+          <div className=""></div>
+        </div>
+        {/* SERVICES CARDS */}
       </section>
-
-      {/* SERVICES SECTIONS  */}
-      <Layers />
-      {/* SERVICES SECTIONS  */}
     </>
   );
 };

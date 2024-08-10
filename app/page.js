@@ -7,6 +7,7 @@ import {
   ProjectsSection,
   ServiceSection,
 } from "./components/sections";
+import Layers from "./components/ui/SectionLayers";
 
 export default function Home() {
   return (
