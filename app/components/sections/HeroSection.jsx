@@ -92,7 +92,7 @@ const HeroSection = () => {
         </h1>
       </div>
 
-      <div className="w-full md:w-[40%] lg:w-1/3 ml-auto  pt-10 text flex flex-col">
+      <div className="w-full md:w-[40%] lg:w-1/3 ml-auto mt-auto  pt-10 text flex flex-col">
         We blend creativity with innovation to craft unforgettable stories and
         designs that captivate, inspire, and drive results. By merging artistic
         vision with strategic thinking, we deliver impactful solutions that not

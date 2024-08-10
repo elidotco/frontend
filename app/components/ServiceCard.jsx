@@ -2,33 +2,28 @@ import React from "react";
 import logo from "@/public/gr.svg";
 import Image from "next/image";
 
-const ServiceCard = ({ value }) => {
+const ServiceCard = ({ image, name }) => {
   return (
-    <div
-      className={` ${
-        value === 3
-          ? "bg-[#000]"
-          : value === 0
-          ? "background3"
-          : value === 1
-          ? "background4"
-          : "background4"
-      } + " md:w-1/2 w-full h-full md:h-1/2 flex items-center text-center text-md justify-center hover:bg-[#000] bg-opacity-20   hover:transition-all py-5 duration-100 hover:duration-100 transition-all flex-col px-5 "`}
-    >
+    <div className="w-full md:w-[45vw] lg:w-[30vw] h-fit py-5 px-10 flex justify-start flex-col">
       {/* Logo */}
       <Image
-        src={logo}
+        src={image}
         alt="icon"
         width={100}
         height={100}
-        className="w-1/3 h-auto"
+        className="w-[9vw] h-auto"
       />
       {/* Logo */}
-      <h3 className="text-orange font-semibold">VIDEO MARKETING</h3>
-      <p className="text-sm">
+      <h3 className="text-orange text-[24px] font-medium py-3">{name}</h3>
+      <p className="text-sm font-extralight text-[#f1efef]">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta esse
         quaerat magnam porro{" "}
       </p>
+
+      <a href="#" className=" pt-4 text-[#fff]">
+        learn more
+        <div className="w-20 h-[1px] bg-orange"></div>
+      </a>
     </div>
   );
 };
