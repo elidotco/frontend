@@ -3,11 +3,11 @@
 import Image from "next/image";
 import {
   AboutSection,
+  Footer,
   HeroSection,
   ProjectsSection,
   ServiceSection,
 } from "./components/sections";
-import Layers from "./components/ui/SectionLayers";
 
 export default function Home() {
   return (
@@ -16,6 +16,7 @@ export default function Home() {
       <AboutSection />
       <ServiceSection />
       <ProjectsSection />
+      <Footer />
     </main>
   );
 }

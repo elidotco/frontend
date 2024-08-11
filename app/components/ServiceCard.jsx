@@ -14,7 +14,7 @@ const ServiceCard = ({ image, name }) => {
         className="w-[9vw] h-auto"
       />
       {/* Logo */}
-      <h3 className="text-orange text-[24px] font-medium py-3">{name}</h3>
+      <h3 className="text-orange text-[24px] font-light py-3">{name}</h3>
       <p className="text-sm font-extralight text-[#f1efef]">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta esse
         quaerat magnam porro{" "}

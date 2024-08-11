@@ -4,7 +4,7 @@ import { ServiceCard } from "..";
 import icon1 from "@/public/brand-identity.png";
 import icon2 from "@/public/video-camera.png";
 import icon3 from "@/public/social-media.png";
-import icon4 from "@/public/Group (7).png";
+import icon4 from "@/public/Group (8).png";
 import icon5 from "@/public/digital.png";
 import Link from "next/link";
 
@@ -12,10 +12,10 @@ const AboutSection = () => {
   return (
     <>
       <section className="py-20 service  flex justify-between  flex-col  px-5 md:px:10 lg:px-[50px]  items-center lg:py-28">
-        <h3 className="text-orange font-semibold  text-[2vw] text-center ">
+        <h3 className="text-orange font-semibold  text-[3vw] text-center ">
           Experience The power of Innovation.
         </h3>
-        <h4 className="text-[2vw] pt-20 text-center service-text">
+        <h4 className="text-[3vw] md:text-[2vw] pt-20 text-center service-text">
           we offer comprehensive services designed to elevate your brand and
           connect with your audience. Our team of experts is dedicated to
           bringing your vision to life with creativity, precision, and

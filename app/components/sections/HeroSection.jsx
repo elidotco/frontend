@@ -82,7 +82,7 @@ const HeroSection = () => {
 
   return (
     <section
-      className="w-full h-screen bg-fixed bg-[#000] overflow-y-hidden
+      className="w-full h-screen bg-fixed bg-[#0E0D0D] overflow-y-hidden
      md:px-10 pt-28 md:pt-36 flex lg:justify-between flex-col pb-10  px-5 xl:px-[50px"
     >
       <div className="text-left ">
