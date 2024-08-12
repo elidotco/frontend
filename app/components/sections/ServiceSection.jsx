@@ -4,7 +4,7 @@ import { ServiceCard } from "..";
 import icon1 from "@/public/brand-identity.png";
 import icon2 from "@/public/video-camera.png";
 import icon3 from "@/public/social-media.png";
-import icon4 from "@/public/Group (8).png";
+import icon4 from "@/public/data.png";
 import icon5 from "@/public/digital.png";
 import Link from "next/link";
 
