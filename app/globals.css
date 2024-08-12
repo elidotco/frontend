@@ -85,3 +85,9 @@ body {
   stroke-linejoin: round;
   stroke-linecap: round;
 }
+
+.contact {
+  background: url("https://bit.ly/3MmZkm9") no-repeat center;
+  background-size: cover;
+  border: none;
+}
