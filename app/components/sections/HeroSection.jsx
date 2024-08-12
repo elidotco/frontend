@@ -86,13 +86,13 @@ const HeroSection = () => {
      md:px-10 pt-28 md:pt-36 flex lg:justify-between flex-col pb-10  px-5 xl:px-[50px"
     >
       <div className="text-left ">
-        <h1 className=" herotext text-orange pl-10 w-full  font capitalise text-[35px] lg:text-[8vw] md:text-6xl ">
+        <h1 className=" herotext text-orange lg:pl-10 w-full  font capitalise text-[35px] lg:text-[8vw] md:text-6xl ">
           We are a Creative Design
           <span className=" py-5 text-[#fff] "> Agency</span>
         </h1>
       </div>
 
-      <div className="w-full md:w-[40%] lg:w-1/3 ml-auto mt-auto  pt-10 text flex flex-col">
+      <div className="w-full md:w-[40%] lg:w-1/3 ml-auto mt-auto mb-20  pt-10 text flex flex-col">
         We blend creativity with innovation to craft unforgettable stories and
         designs that captivate, inspire, and drive results. By merging artistic
         vision with strategic thinking, we deliver impactful solutions that not

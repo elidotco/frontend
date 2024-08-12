@@ -34,7 +34,7 @@ const AboutSection = () => {
 
         <Link
           href="/"
-          className="transparent md:absolute bottom-0 ml-0 md:ml-auto md:mr-10 md:right-0 lg:right-[50px] w-fit my-5 transition-all hover:text-[#000] hover:bg-[#fff] px-6 py-2 text-[#fff] border-2 border-[#fff] rounded-3xl hover:duration-150 duration-150"
+          className="transparent md:absolute bottom-0 ml-10 md:ml-auto md:mr-10 md:right-0 lg:right-[50px] w-fit my-5 transition-all hover:text-[#000] hover:bg-[#fff] px-6 py-2 text-[#fff] border-2 border-[#fff] rounded-3xl hover:duration-150 duration-150"
         >
           Explore more Services
         </Link>

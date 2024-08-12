@@ -25,7 +25,7 @@ const ProjectsSection = () => {
         {/* line */}
       </div>
 
-      <div className="p-20">
+      <div className="lg:px-[50px] md:px-10  py-20 px-10">
         <Splide
           aria-label="My Favorite Images"
           options={{
@@ -51,22 +51,22 @@ const ProjectsSection = () => {
           }}
         >
           <SplideSlide>
-            <div className="w-full h-64 bg-orange"></div>
+            <div className="w-full h-72 cursor-pointer bg-orange"></div>
           </SplideSlide>
           <SplideSlide>
-            <div className="w-full h-64 bg-orange"></div>
+            <div className="w-full h-72 cursor-pointer bg-orange"></div>
           </SplideSlide>
           <SplideSlide>
-            <div className="w-full h-64 bg-orange"></div>
+            <div className="w-full h-72 cursor-pointer bg-orange"></div>
           </SplideSlide>
           <SplideSlide>
-            <div className="w-full h-64 bg-orange"></div>
+            <div className="w-full h-72 cursor-pointer bg-orange"></div>
           </SplideSlide>
           <SplideSlide>
-            <div className="w-full h-64 bg-orange"></div>
+            <div className="w-full h-72 cursor-pointer bg-orange"></div>
           </SplideSlide>
           <SplideSlide>
-            <div className="w-full h-64 bg-orange"></div>
+            <div className="w-full h-72 cursor-pointer bg-orange"></div>
           </SplideSlide>
         </Splide>
       </div>

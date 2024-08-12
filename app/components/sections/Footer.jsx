@@ -8,7 +8,7 @@ import { SlSocialTwitter } from "react-icons/sl";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#000]  pt-20  relative bottom-0 px-5 md:px-10 lg:px-[100px] flex flex-col justify-center items-center">
+    <footer className="w-full bg-[#000]  pt-20 md:mt-20  relative bottom-0 px-5 md:px-10 lg:px-[100px] flex flex-col justify-center items-center">
       {/* CONTACT SECTION */}
       <div className="w-full md:w-[85vw] lg:w-[75vw] contact mx-auto flex items-center justify-center flex-col gap-y-14 border relative -top-40 py-20">
         <h3 className="font-bold text-4xl">READY FOR YOUR PROJECT,</h3>
