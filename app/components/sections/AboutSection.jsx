@@ -19,7 +19,7 @@ const AboutSection = () => {
           <div className="w-full md:w-[40%] h-64 bg-gray-light bg-opacity-30 "></div>
           {/* IMAGES SCROLL ANIMATION */}
 
-          <p className=" md:w-[45%]">
+          <p className=" text-lg font-light md:w-[45%]">
             we are passionate about crafting unique and compelling stories that
             resonate with your audience. As a full-service creative media
             agency, we blend innovation, strategy, and creativity to deliver
