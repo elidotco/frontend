@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ServiceCard = ({ image, name }) => {
   return (
-    <div className="w-full md:w-[45vw] lg:w-[30vw] h-fit py-10 px-10 flex justify-start flex-col">
+    <div className="w-full md:w-[30vw] lg:w-[30vw] h-fit py-10 pl-10 flex justify-start flex-col ">
       {/* Logo */}
       <Image
         src={image}

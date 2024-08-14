@@ -10,11 +10,11 @@ import Link from "next/link";
 const AboutSection = () => {
   return (
     <>
-      <section className="py-20 service  flex justify-between  flex-col  px-5 md:px:10 lg:px-[50px]  items-center lg:py-28">
+      <section className="py-20 service  flex justify-between  flex-col  px-5 md:px:10 lg:px-[10vw]  items-center lg:py-28">
         <h3 className="text-orange font-semibold  text-[5vw] lg:text-[2vw] text-center ">
           Experience The power of Innovation.
         </h3>
-        <h4 className="text-[3vw] md:text-[2vw] pt-20 text-center service-text">
+        <h4 className="text-[5vw] md:text-[2vw] pt-20 text-center service-text">
           we offer comprehensive services designed to elevate your brand and
           connect with your audience. Our team of experts is dedicated to
           bringing your vision to life with creativity, precision, and
@@ -25,7 +25,7 @@ const AboutSection = () => {
         </h4>
       </section>
       {/* SERVICES CARDS */}
-      <div className="flex flex-wrap relative   w-full h-fit items-center justify-start  my-20 lg:pl-10">
+      <div className="flex relative lg:px-[10vw]   w-full h-fit items-center justify-start py-20 ">
         <ServiceCard image={icon1} name="Branding" />
         <ServiceCard image={icon2} name={"Photography"} />
         <ServiceCard image={icon5} name="Audio Visual" />

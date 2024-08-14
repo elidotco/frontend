@@ -2,7 +2,7 @@ import React from "react";
 
 const Nav = () => {
   return (
-    <nav className="w-full nav h-20 fixed flex justify-between items-center px-5 md:px-10  xl:px-[50px] bg-[#0E0D0D] z-40">
+    <nav className="w-full nav h-20 fixed flex justify-between items-center px-5 md:px-10  xl:px-[10vw] bg-[#0E0D0D] z-40">
       {/* Logo */}
       <h1 className="font-bold text-xl">
         <span className="text-[#fc6500]">AURA</span>

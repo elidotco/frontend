@@ -3,14 +3,14 @@ import Image from "next/image";
 
 const AboutSection = () => {
   return (
-    <section className="py-20  about overflow-hidden flex justify-between  flex-col  px-5 md:px:10 lg:px-[50px]  items-center lg:py-28">
+    <section className="py-20  about overflow-hidden flex justify-between  flex-col  px-5 md:px:10 lg:px-[10vw]  items-center lg:py-28">
       <h2 className="font-semibold text-[3vw] text-center about-text1">
         Applying a cross-disciplinary expertise in crafting and executing
         tech-based solutions to optimize industrial operations.
       </h2>
 
       <div className="about-images">
-        <h3 className="text-orange text-[5vw] font-semibold lg:text-[2vw] text-center pt-28 about-text2">
+        <h3 className="text-orange text-[8vw] font-semibold lg:text-[2vw] text-center pt-10 md:pt-28 about-text2">
           We bring Creative ideas to life
         </h3>
 

@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="w-full md:w-[85vw] lg:w-[75vw] contact mx-auto flex items-center justify-center flex-col gap-y-14 border relative -top-40 py-20">
         <h3 className="font-bold text-4xl">READY FOR YOUR PROJECT,</h3>
 
-        <button className="transparent px-6 py-1 text-[#fff] border-2 border-orange rounded-3xl">
+        <button className="transparent px-6 py-1 text-[#fff] border-2 border-orange rounded-3xl hover:bg-orange hover::text-[#000] transition-all duration-150 hover:transition-all hover:duration-100">
           GET IN TOUCH
         </button>
       </div>
