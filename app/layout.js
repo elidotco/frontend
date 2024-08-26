@@ -2,12 +2,13 @@
 
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "./components";
+
 import { usePathname } from "next/navigation";
 import Nav from "./components/Nav";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
+import { ReactLenis, useLenis } from "lenis/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -62,9 +63,10 @@ export default function RootLayout({ children }) {
         <title>{data}</title>
       </head>
       <body className={inter.className}>
-        <Nav />
-
-        {children}
+        <ReactLenis root>
+          <Nav />
+          {children}
+        </ReactLenis>
       </body>
     </html>
   );
